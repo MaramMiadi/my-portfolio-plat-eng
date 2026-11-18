@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: my-portfolio-plat-eng
+  description: My personal portfolio website built with Next.js and Docker
+  annotations:
+    github.com/project-slug: MaramMiadi/my-portfolio-plat-eng
+
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:guest

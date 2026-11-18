@@ -1,0 +1,17 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: portfolio:my-portfolio-plat-eng
+
+    container_name: my-portfolio-plat-eng
+
+    ports:
+      - "3000:3000"
+
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: production
